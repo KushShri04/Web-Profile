@@ -1,0 +1,440 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+
+}
+
+.navbar {
+  background-color: #ffffff;
+  color: #000;
+  padding: 10px 0;
+border: 2.5px solid #e6e3e3;
+margin-top: -2px;
+font-weight: 550;
+margin-left: -2px;
+margin-right: -2px;
+}
+
+.container {
+  max-width: 100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-brand {
+  font-size: 24px;
+}
+
+.navbar-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar-menu li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.navbar-menu li a {
+  color: #00;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.navbar-menu li a:hover {
+  border: 1.5px solid black;
+ background-color: #000;
+ color: #fff;
+}
+
+.about-section {
+  background-color: #fff;
+  padding: 100px 0;
+}
+
+.about-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-photo {
+  width: 400px; /* Adjust the width as needed */
+  border-radius: 50%;
+  margin-right: 100px;
+  margin-left: 42px;
+}
+
+.description {
+  max-width: 500px;
+}
+
+.description h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.description p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+.contact-form {
+  margin-top: 20px;
+}
+
+.contact-form input[type="email"] {
+  width: 300px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact-form button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+}
+
+.projects-section {
+  padding: 10px 0;
+background-color: #ffff;
+}
+
+.container {
+  max-width: 1200px; /* Adjust as needed */
+  margin: 0 auto;
+  overflow: hidden; /* Clear floats */
+}
+
+.projects-grid {
+  display: flex; /* Use flexbox */
+  flex-wrap: wrap; /* Allow items to wrap to the next line */
+  justify-content: space-between; /* Distribute items evenly along the main axis */
+}
+
+.project {
+  flex-basis: calc(25% - 25px); /* Set width of each project to half the container width with spacing between */
+  margin-bottom: 20px;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.project img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.project:hover .overlay {
+  opacity: 1;
+}
+
+.overlay h3 {
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+}
+
+.arrow {
+  position: absolute;
+  bottom: -30px; /* Adjust as needed */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #000;
+  cursor: pointer;
+}
+
+.project.more {
+  position: relative;
+}
+
+.project.more .arrow {
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #fff;
+  cursor: pointer;
+}
+
+.hidden-projects {
+  display: none;
+}
+
+.hidden-projects.show {
+  display: block;
+}
+
+/* Add styling for the remaining project squares as needed */
+
+.experience-section {
+  padding: 10px 0;
+background-color: #fff;
+
+}
+
+
+.experience-section h2 {
+  margin-bottom: 40px;
+
+}
+
+
+.experience-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
+  grid-gap: 20px;
+}
+
+.experience-item {
+  display: flex;
+  align-items: center;
+  background-color:#edf5e9;
+  padding: 15px;
+  border-radius: 20px;
+}
+
+.experience-item img {
+  width: 50px;
+  height: auto;
+  margin-right: 20px;
+filter: drop-shadow(5px 5px 5px grey);
+}
+
+.company-info h3 {
+  margin: 0;
+  font-size: 19px;
+}
+
+.company-info p {
+  margin: 15px 0;
+font-size: 13px;
+}
+
+.education-section {
+  padding: 10px 0;
+}
+
+.education-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(1000px, 1fr));
+  grid-gap: 20px;
+}
+
+.education-item {
+  display: flex;
+  align-items: center;
+  background-color: #edf5e9;
+  padding: 15px;
+  border-radius: 20px;
+
+}
+
+.education-item img {
+  width: 100%;
+  height: auto;
+  max-width: 80px;
+filter: drop-shadow(5px 5px 5px grey);
+}
+
+.school-info h3 {
+  margin: 10;
+  font-size: 18px;
+}
+
+.school-info p {
+  margin: 20px 10;
+  font-size: 12px;
+}
+
+.achievements-section {
+  padding: 10px 0;
+background-color: #fff;
+}
+
+.achievements-grid {
+  display: flex; /* Use flexbox */
+  flex-wrap: wrap; /* Allow items to wrap to the next line */
+  justify-content: space-between; /* Distribute items evenly along the main axis */
+}
+
+.achievement-item {
+  flex-basis: calc(33.3% - 15px); /* Set width of each achievement item to half the container width with spacing between */
+  
+margin-right: 15px;
+  position: relative;
+}
+
+
+.achievement {
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.achievement-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+  opacity: 0; /* Initially hidden */
+  transition: opacity 0.3s ease; /* Smooth transition */
+}
+
+.achievement-item:hover .overlay {
+  opacity: 1; /* Show overlay on hover */
+}
+
+.achievement-item h3 {
+  position: absolute;
+  bottom: -15px; /* Adjust as needed */
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 16px;
+}
+
+.overlay h3 {
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+}
+
+.hobbies-section {
+  padding: 10px 0;
+}
+
+.hobbies-grid {
+  display: flex;
+ flex-wrap: wrap;
+justify-items: center;
+flex-basis: content;
+align-items: center; /* Align items to the center */
+}
+
+.hobby-item {
+  flex-basis: calc(20% ); /* Set width of each achievement item to half the container width with spacing between */
+  margin-bottom: 5px;
+margin-right: 15px;
+margin-top: 15px;
+position: relative;
+
+}
+
+.hobby-item img {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.3s ease;
+filter: drop-shadow(3px 3px 3px grey);
+}
+
+.hobby-item:hover img {
+  transform: scale(1.1); /* Increase scale on hover */
+}
+
+.footer-section {
+  background-color: #333;
+  color: #fff;
+  padding: 40px 0;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.resume-section,
+.connect-section {
+  width: 45%;
+}
+
+.resume-section h3,
+.connect-section h3 {
+  margin-bottom: 10px;
+}
+
+.resume-section button,
+.connect-section button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.resume-section button:hover,
+.connect-section button:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+}
+
+.social-buttons {
+  display: flex;
+}
+
+.social-buttons a {
+  margin-right: 10px;
+}
+
+/* YouTube Channel Section */
+.youtube-section {
+  padding: 100px 0;
+}
+
+.youtube-videos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.youtube-videos iframe {
+  flex-basis: calc(50% - 20px);
+  margin-bottom: 20px;
+}
+
+
